@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<svg version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="700.772 3457 15.517 25" class="ng-element" data-id="604bf7fa13c892be7c62b230eeefeca8" style="filter: none; overflow: visible; width: 18px; height: 28px;" xmlns="http://www.w3.org/2000/svg"><defs>
+    <style>
+      .cls-1_1517161001136 {
+        fill: #fff;
+      }
+
+      .cls-2_1517161001136 {
+        fill: #e74c3c;
+      }
+    </style>
+  </defs><g id="fire_white_1517161001136" transform="translate(603.669 3457.001)">
+    <path id="Path_430_1517161001136" data-name="Path 430" class="cls-1_1517161001136" d="M97.1,17.24A7.759,7.759,0,0,0,104.862,25h0a7.759,7.759,0,0,0,7.759-7.759c0-4.31-2.155-7.759-.709-10.776,0,0-2.308.431-3.6,3.879A10.943,10.943,0,0,1,105.8,0s-4.387,1.724-3.928,7.328c.393,4.8-.459,5.6-.459,5.6a6.618,6.618,0,0,0-3.033-5.6C99.258,12.068,97.1,13.361,97.1,17.24Z" vector-effect="non-scaling-stroke"/>
+    <path id="Path_431_1517161001136" data-name="Path 431" class="cls-1_1517161001136" d="M160.5,178.613a5.766,5.766,0,0,1-5.718,5.92,4.947,4.947,0,0,1-5.054-5.387,13.064,13.064,0,0,1,2.8-5.738l1.113.673a22.547,22.547,0,0,1,1.257-6.358C155.747,171.546,160.5,172.537,160.5,178.613Z" transform="translate(-50.036 -159.535)" vector-effect="non-scaling-stroke"/>
+    <path id="Path_432_1517161001136" data-name="Path 432" class="cls-2_1517161001136" d="M186.672,285.069c-.431,2.586-1.293,3.528-1.293,5.172a3.57,3.57,0,0,0,3.448,3.448h0a3.459,3.459,0,0,0,3.448-3.485,10.486,10.486,0,0,0-3.017-7.721,4.51,4.51,0,0,1-.862,3.879A4.379,4.379,0,0,0,186.672,285.069Z" transform="translate(-83.966 -268.691)" vector-effect="non-scaling-stroke"/>
+  </g></svg>

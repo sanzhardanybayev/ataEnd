@@ -1,0 +1,122 @@
+.DayPickerInput {
+    display: inline-block;
+}
+.slick-arrow slick-prev{
+    background-image: url("../img/123.jpg") !important;
+    z-index: 55;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+.slick-arrow{
+    background-image: url("../img/123.jpg") !important;
+    z-index: 55;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+.slick-prev{
+    background-image: url("../img/left.png") !important;
+    z-index: 55;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+.slick-prev:before{
+    content: '' !important;
+}
+.slick-arrow slick-next{
+    background-image: url("../img/right.png") !important;
+    z-index: 55;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+.slick-next{
+    background-image: url("../img/right.png") !important;
+}
+.slick-next:before{
+    content: ' ' !important;
+}
+.slick-dots{
+    display: none !important;
+}
+
+.DayPickerInput-OverlayWrapper {
+    position: absolute !important;
+    right: 35px !important;
+    background: white !important;
+    z-index: 55 !important;
+    margin-right: 10px !important;
+    left: -100px !important;
+}
+.Select1{
+    margin-bottom: 30px !important;
+}
+.react-rater {
+    font-size: 2em;
+}
+.react-rater-star.is-active{
+    color: #E74C3C !important;
+}
+.closeButton{
+    color: black;
+}
+.MuiPaper-root-12 MuiPaper-elevation24-38 MuiPaper-rounded-13 MuiDialog-paper-2 MuiDialog-paperWidthSm-4{
+    width: 80% !important;
+    min-width: 80% !important;
+    max-width: 80% !important;
+}
+.MuiPaper-root-19 MuiPaper-elevation24-45 MuiPaper-rounded-20 MuiDialog-paper-9 MuiDialog-paperWidthSm-11{
+    width: 80% !important;
+    min-width: 80% !important;
+    max-width: 80% !important;
+}
+.MuiDialog-paperWidthSm-110{
+    max-width: 80% !important;
+    min-width: 80% !important;
+    width: 80% !important;
+}
+/* .slick-slide slick-cloned{
+    width: 500px !important;
+}
+.slick-slide{
+    width: 500px !important;
+}
+.slick-cloned{
+    width: 500px !important;
+}
+.slick-slide slick-active slick-current{
+    width: 500px !important;
+}
+.slick-active{
+    width: 500px !important;
+}
+.slick-current{
+    width: 500px !important;
+} */
+.MuiDialogActions-root-39{
+    position: absolute !important;
+    width: 97% !important;
+    z-index: 1 !important;
+}
+.MuiDialogContent-root-66{
+    margin-top: 20px !important;
+}
+.DayPickerInput input::-webkit-input-placeholder {
+    color: black !important;
+}
+.DayPickerInput input:-moz-placeholder { /* Firefox 18- */
+     color: black !important;
+ }
+.MuiDialogActions-action-40{
+    min-width: auto !important;
+}
+.MuiDialogContent-root-41{
+    padding: 0 !important;
+}
+.slick-track{
+    display: flex !important;
+}
+@media (max-width: 775px){
+    .DayPickerInput-OverlayWrapper{
+        top: -100px !important;
+    }
+}
+

@@ -1,0 +1,26 @@
+@import "../../../node_modules/react-day-picker/lib/style";
+.dateInputConainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid #dee0e0;
+  vertical-align: top;
+  position: relative;
+  padding-top: 4px;
+  input{
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+}
+
+.dateInputConainer::before{
+  content: url("../../images/Group 449.png");
+  position: absolute;
+  left: 28px;
+  top: 11px;
+}

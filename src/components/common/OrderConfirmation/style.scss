@@ -1,0 +1,134 @@
+.Order{
+  .row{
+    margin: 60px 0;
+    h5{
+      color: #414948;
+      font-family: Roboto_Bold;
+      font-size: 34px;
+    }
+    .Menu{
+      width: 100%;
+      min-height: 395px;
+      .Left{
+        .Left1{
+          p{
+            color: #414948;
+            font-family: OpenSansRegular;
+            font-size: 16px;
+            span{
+              font-weight: bold;
+            }
+          }
+        }
+        .center{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          p{
+            color: #414948;
+            font-family: OpenSansSemiBold;
+          }
+          span{
+            color: #414948;
+            font-family: OpenSansRegular;
+          }
+        }
+      }
+      .Right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .Modal{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 0 30px;
+          width: 460px;
+           min-height: 218px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          h6{
+            color: #414948;
+            font-family: OpenSansSemiBold;
+            font-size: 16px;
+            margin: 10px 0;
+          }
+          p{
+            font-family: OpenSansRegular;
+            color: #414948;
+            font-size: 16px;
+          }
+          .mobile{
+            display: flex;
+            justify-content: space-between;
+            .number{
+              display: flex;
+              align-items: center;
+
+              img{
+                width: 15px;
+                height: 15px;
+              }
+              p{
+                margin: 0;
+                font-size: 18px;
+                font-family: RobotoRegular;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 773px){
+  .Order{
+    .row{
+      .Menu{
+        .Right{
+          .Modal{
+            margin: 20px 0;
+            .mobile{
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 374px) and (max-width: 573px){
+  .Order{
+    .row{
+      .Menu{
+        .Right{
+          .Modal{
+            margin: 20px 0;
+            .mobile{
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 373px){
+  .Order{
+    .row{
+      .Menu{
+        .Right{
+          .Modal{
+            margin: 20px 0;
+            .mobile{
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

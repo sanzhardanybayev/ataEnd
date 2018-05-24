@@ -1,0 +1,165 @@
+.Cards{
+  margin: 10px 5px 50px 5px;
+  width: 247px;
+  min-height: 379px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  .Images{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: silver;
+    width: 100%;
+    height: 155px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    .Filter{
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: black;
+      opacity: 0.5;
+    }
+    .tour{
+      position: absolute;
+      top: 5px;
+      left: -13px;
+      font-family: RobotoCondensed;
+      font-size: 17px;
+      color: white;
+      margin: 0 0 2px 25px;
+      z-index: 1;
+
+    }
+
+    p{
+      font-family: RobotoCondensed;
+      font-size: 17px;
+      color: white;
+      margin: 0 0 0 25px;
+      z-index: 1;
+    }
+    .Stars{
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .Learn{
+    padding-left: 20px;
+    padding-right: 20px;
+    .Watch{
+      height: 50px;
+      margin: 10px 0;
+      display: flex;
+      position: relative;
+      &:before{
+        content: ' ';
+        position: absolute;
+        background-color: rgba(149, 152, 154, 0.1);
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        height: 1px;
+      }
+      .Tenge{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        p{
+          margin: 0 5px 3px 5px;
+          font-family: OpenSansRegular;
+        }
+        img{
+          width: 12px;
+          height: 14px;
+        }
+      }
+    }
+
+
+  }
+  .text{
+    margin: 17px 0;
+    min-height: 89px;
+    p{
+      font-family: OpenSansRegular;
+      font-size: 14px;
+    }
+  }
+
+  .learnMore{
+    margin: 18px 0;
+    width: 100%;
+    height: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .Left{
+      margin-top: 8px;
+      svg {
+        height: 25px;
+        width: 25px;
+        margin: 0 7px;
+      }
+    }
+    .Right{
+      margin-bottom: 18px;
+      img{
+        width: 5px;
+        height: 9px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+      a{
+        cursor: pointer;
+        font-family: OpenSansRegular;
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+@media (min-width: 374px) and (max-width: 573px) {
+  .Cards{
+    width: 260px;
+    margin: 10px auto;
+    .Learn{
+      .Right{
+        a{
+
+        }
+      }
+    }
+  }
+
+}
+@media (min-width: 0px) and (max-width: 373px) {
+  .Cards{
+    width: 100%;
+    margin: 10px auto;
+    .Learn{
+      .Right{
+        a{
+
+        }
+      }
+    }
+  }
+
+}

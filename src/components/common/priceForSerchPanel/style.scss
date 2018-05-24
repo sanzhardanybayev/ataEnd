@@ -1,0 +1,74 @@
+.date{
+  border-right: 1px solid #dee0e0;
+  position: relative;
+  -webkit-appearance: none;
+  input{
+    margin-top: 0px;
+    height: 100%;
+    border: none;
+    padding-left: 67px;
+    outline: none;
+    -webkit-appearance: none;
+  }
+  input::-webkit-input-placeholder {
+    color: black !important;
+  }
+  input:-moz-placeholder { /* Firefox 18- */
+    color: black !important;
+  }
+  &:before{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 13px;
+    position: absolute;
+    top: 13px;
+    left: 48px;
+    background-image: url("../../../../img/icons/tenge_black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .date{
+    border: none;
+    width: 280px !important;
+    input{
+      margin-top: 32px;
+      border-radius: 30px;
+      height: 50px;
+      box-shadow: 0 0 5px #eee;
+      border: none;
+      padding-left: 0;
+      text-align: center;
+      outline: none;
+      padding-right: 3px;
+      width: 100% !important;
+      -moz-appearance: textfield;
+      &:-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      &:-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+    &:before{
+      content: '';
+      display: inline-block;
+      position: absolute !important;
+      bottom: 17px !important;
+      left: 72px;
+      top: auto;
+      background-image: url("../../../../img/icons/UniKZT.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+

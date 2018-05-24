@@ -1,0 +1,26 @@
+.title{
+  position: relative;
+  margin: 10px 0;
+
+  p{
+    color: #000000;
+    opacity: 0.65;
+    font-size: 15px;
+    margin: 0 0 0 15px;
+    font-family: OpenSansRegular;
+    &:before{
+      content: ' ';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: rgba(231, 76, 60, 1);
+      top: 8px;
+      left: 1px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+
+
+    }
+  }
+}

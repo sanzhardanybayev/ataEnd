@@ -1,0 +1,10 @@
+.Info1{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+@media (max-width: 773px){
+  .Info1{
+    justify-content: center;
+  }
+}

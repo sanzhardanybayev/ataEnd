@@ -1,0 +1,288 @@
+.sectionHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+
+  .showMore{
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    margin: 1em;
+    display: block;
+    font-size: 1em;
+    &:hover{
+      text-decoration: none;
+      color: #E74C3C;
+      img{
+        -webkit-transform: translateX(50%) translateZ(0);
+        -moz-transform: translateX(50%) translateZ(0);
+        -ms-transform: translateX(50%) translateZ(0);
+        -o-transform: translateX(50%) translateZ(0);
+        transform: translateX(50%) translateZ(0);
+      }
+    }
+    img{
+      width: 6px;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms;
+      backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+
+  .Header{
+    height: 80%;
+    background-attachment: fixed;
+    width: 100%;
+    background-image: url("../../../../img/q.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .Filter{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      opacity: 0.5;
+    }
+    .text{
+      margin-top: 70px;
+      z-index: 1;
+      position: relative;
+      div{
+        margin-left: 5px;
+        line-height: 0;
+      }
+      h6{
+        color: #E74C3C;
+        font-family: OpenSansBold;
+        font-size: 14px;
+      }
+      h2{
+        font-size: 50px;
+        font-family: Gilroy-ExtraBold;
+        color: white;
+        width: 73%;
+
+      }
+      p{
+        font-family: GilroyLight;
+        color: white;
+        width: 58%;
+        font-size: 16px;
+      }
+    }
+    .icons1{
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 60%;
+        left: 0px;
+        border: 0.4px solid silver;
+        width: 100%;
+        opacity: 0.1;
+      }
+      .active{
+        .red{
+          opacity: 1 !important;
+          transition: 300ms;
+        }
+        .white{
+          opacity: 0 !important;
+          transition: 300ms;
+        }
+      }
+      .icons{
+        cursor: pointer;
+        margin: 0 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        *{
+          pointer-events: none;
+        }
+
+        &.lightUp .before, &:hover .before{
+          width: 50%;
+          opacity: 1;
+        }
+        &.lightUp .after,  &:hover .after{
+          width: 50%;
+          opacity: 1;
+        }
+        &.lightUp .red, &:hover .red{
+          opacity: 1 !important;
+          transition: 300ms;
+        }
+        &.lightUp .white, &:hover .white{
+          opacity: 0 !important;
+          transition: 300ms;
+        }
+        &.lightUp a, &:hover a{
+          color: #E74C3C;
+          transition: 300ms;
+        }
+        .active{
+          color: #E74C3C;
+          transition: 300ms;
+        }
+        #house1{
+          left: 31%;
+        }
+        img{
+          width: 35px;
+          height: 30px;
+          position: absolute;
+          top: 8px;
+          left: 4px;
+        }
+        .red{
+          opacity: 0;
+        }
+        a{
+          margin-top: 58px;
+          font-family: GilroyLight;
+          font-size: 16px;
+          color: white;
+          position: relative;
+          text-decoration: none;
+          .before{
+            opacity: 0;
+            content: '';
+            position: absolute;
+            border: 1px solid #E74C3C;
+            width: 10%;
+            top: -10px;
+            right: 50%;
+            transition: .6s;
+          }
+          .after{
+            opacity: 0;
+            content: '';
+            position: absolute;
+            border: 1px solid #E74C3C;
+            top: -10px;
+            left: 50%;
+            width: 10%;
+            transition: .6s;
+          }
+        }
+      }
+    }
+
+  }
+  .Search{
+    min-height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @keyframes pulse_animation {
+      0% { transform: translateY(0%); }
+      50% { transform: translateY(10px); }
+      100%{ transform: translateY(0%); }
+    }
+    .goDown{
+      width: 11px;
+      margin-top: 30px;
+      height: 11px;
+      animation-name: pulse_animation;
+      animation-duration: 1000ms;
+      transform-origin:70% 70%;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      cursor: pointer;
+      .imageAnimate{
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+  }
+
+}
+
+.charged{
+  color: #E74C3C !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 767px){
+  .sectionHeader{
+    min-height: 50px;
+    .Header{
+      .text{
+        h2{
+          width: 82%;
+          font-size: 38px;
+        }
+        p{
+          width: 100%;
+        }
+      }
+    }
+    .Search{
+      min-height: 529px;
+      margin: 5px 0;
+    }
+  }
+}
+@media (min-width: 374px) and (max-width: 574px){
+  .sectionHeader{
+    .Header{
+      .text{
+        p{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 373px){
+  .sectionHeader{
+    .Header{
+      .text{
+        margin-top: 20px;
+
+        h2{
+          font-size: 33px;
+          width: 93%;
+        }
+        p{
+          width: 100%;
+        }
+      }
+      .icons1{
+        .icons{
+          #house1{
+          }
+        }
+      }
+    }
+  }
+}

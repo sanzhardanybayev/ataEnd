@@ -1,0 +1,71 @@
+.Header {
+  font-family: GilroyLight;
+  height:auto;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 38%;
+  margin: 0;
+  padding-bottom: 1vh;
+
+  .Filter {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .textHeader{
+    position: relative;
+    z-index: 90;
+    h1{
+      font-family: Gilroy-ExtraBold;
+      font-size: 50px;
+      text-shadow: 0px 0px 10px #000000;
+      color: #FFFFFF;
+      margin: 20px 0;
+    }
+    p{
+      color: #FFFFFF;
+      margin-bottom: 41px;
+    }
+  }
+  .way{
+    z-index: 90;
+    margin-top: 9vh;
+    position: relative;
+    .arrow{
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: rotate(-45deg);
+      margin-left: 1%;
+    }
+    a{
+      color: #FFFFFF;
+      text-decoration: none;
+      &:hover{
+        color: #FFFFFF !important;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 576px){
+  .Header{
+    h1{
+      font-size: 43px !important;
+    }
+    .way{
+      .arrow{
+        margin-left: 3%;
+      }
+    }
+  }
+}

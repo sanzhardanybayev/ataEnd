@@ -1,0 +1,23 @@
+.facilities{
+  div{
+    padding: 0 7px;
+    p{
+      font-family: RobotoRegular;
+      font-size: 17px;
+      color: #414948;
+    }
+    .point{
+      cursor: pointer;
+      p{
+        font-size: 10px !important;
+        font-family: OpenSansLight;
+      }
+    }
+    object{
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+}

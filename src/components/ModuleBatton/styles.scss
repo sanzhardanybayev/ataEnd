@@ -1,0 +1,42 @@
+
+.buttons{
+  width: 100%;
+  text-align: center;
+  .hide{
+    display: none !important;
+  }
+  .Butt{
+    cursor: pointer;
+    border: none;
+    width: 230px;
+    height: 33px;
+    background-color: #E74C3C;
+    color: #fff;
+    border-radius: 24px;
+    font-size: 15px;
+    font-family: RobotoRegular;
+    outline: none;
+    box-shadow: 0 3px 6px #dce0e0;
+    &:focus{
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .Butt{
+    width: 42%;
+  }
+}
+@media (min-width: 374px) and (max-width: 573px){
+  .Butt{
+    width: 50%;
+  }
+}
+@media (max-width: 373px){
+ .Butt{
+   width: 60%;
+ }
+}
+

@@ -1,0 +1,39 @@
+.Name1{
+  text-align: center;
+  .showMore{
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    margin: 1em;
+    display: block;
+    font-size: 1em;
+    &:hover{
+      text-decoration: none;
+      color: #E74C3C;
+      img{
+        -webkit-transform: translateX(50%) translateZ(0);
+        -moz-transform: translateX(50%) translateZ(0);
+        -ms-transform: translateX(50%) translateZ(0);
+        -o-transform: translateX(50%) translateZ(0);
+        transform: translateX(50%) translateZ(0);
+      }
+    }
+    img{
+      width: 6px;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms;
+      backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+}

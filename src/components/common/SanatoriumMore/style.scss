@@ -1,0 +1,93 @@
+.progresPreloader{
+  margin-top: 30px;
+  padding: 0 30px;
+  h5{
+    font-family: sans-serif;
+  }
+}
+.sanatorii{
+  position: relative;
+  overflow-x: hidden;
+  .line{
+    position: absolute;
+    opacity: 0.2;
+    width: 100%;
+    border: 0.5px solid silver;
+    top: 192px;
+    left: 0;
+  }
+  .section1{
+    width: 100%;
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .infoContainer{
+        width: 100%;
+        display: flex;
+      }
+      .ourRooms{
+        .new123{
+          margin: 50px 0;
+          width: 100%;
+          height: 80vh;
+
+        }
+        .room{
+          padding: 10px 0 10px 32px;
+          color: #414948;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-family: RobotoCondensed;
+        }
+        .ourRooms1{
+          margin: 0 auto;
+        }
+
+
+        .About{
+          .aboutH4{
+            h4{
+              font-size: 25px;
+              color: #414948;
+              text-transform: uppercase;
+            }
+          }
+          .aboutUs{
+            color: #414948;
+            font-size: 15px;
+          }
+        }
+
+
+      }
+
+    }
+  }
+
+
+
+}
+
+@media (max-width: 767px){
+  .sanatorii{
+    .line{
+      display: none;
+    }
+    .section1{
+      .row{
+        .ourRooms{
+          .new123{
+            height: 40vh;
+          }
+          .ourRooms1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

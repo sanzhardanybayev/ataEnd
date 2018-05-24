@@ -1,0 +1,67 @@
+.SmallNav{
+  z-index: 102;
+  .burger{
+    float: right;
+    width: 46px;
+    height: 22px;
+    margin-top: 6px;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline:none;
+    .line{
+      width: 26px;
+      margin: 1px 0;
+      height:3px;
+      border:none;
+      background: #ffffff;
+    }
+  }
+  h2{
+    display: inline-block;
+    font-family: OpenSansSemiBold;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 14px;
+    margin-bottom: 0;
+  }
+  .logo{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    //background-image: url("../../../../img/icons/Group 576.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    a{
+      width: 100%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .SmallNav{
+    .logo{
+      width: 40px;
+      height: 40px;
+    }
+    h2{
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .samllScreenButton{
+    padding: 0px !important;
+  }
+}

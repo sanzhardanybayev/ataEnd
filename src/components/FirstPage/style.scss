@@ -1,0 +1,302 @@
+.FirstPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  .section{
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .arrow{
+        img{
+          width: 11px;
+          height: 11px;
+        }
+      }
+      .Info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          margin: 30px 0;
+          font-weight: 400;
+          font-size: 30px;
+          text-transform: uppercase;
+          color: #414948;
+        }
+        #h1{
+          margin-top: 100px;
+          margin-bottom: 50px;
+        }
+        .turistService{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 80px;
+          .Service{
+            padding-left: 44px;
+            h6{
+              margin-top: 50px;
+              width: 100%;
+              font-family: RobotoCondensedBold;
+              font-size: 22px;
+              color: #414948;
+            }
+            p{
+              font-family: OpenSansRegular;
+              font-size: 16px;
+              color: #414948;
+              width: 71%;
+            }
+          }
+          .Owl{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .anchor{
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+
+            }
+          }
+        }
+        #titles{
+          margin: 60px 0px 30px 0px;
+          font-family: RobotoCondensed;
+        }
+        .quality{
+          display: flex;
+          justify-content: center;
+          .what{
+            display: flex;
+            justify-content: center;
+            &:hover h2{
+              color: #E74C3C;
+              cursor: pointer;
+              -webkit-transition: 300ms;
+              -moz-transition: 300ms;
+              -ms-transition: 300ms;
+              -o-transition: 300ms;
+              transition: 300ms;
+
+            }
+            &:hover .color h6{
+              color: #E74C3C;
+              cursor: pointer;
+              -webkit-transition: 300ms;
+              -moz-transition: 300ms;
+              -ms-transition: 300ms;
+              -o-transition: 300ms;
+              transition: 300ms;
+
+            }
+            h2{
+              font-family: RobotoCondensed;
+              font-size: 101px;
+              color: #414948;
+              transform: translateX(-15px);
+             transition: 300ms;
+
+            }
+            .color{
+              margin-top: 22px;
+              display: flex;
+              flex-direction: column;
+              h6{
+                font-family: RobotoCondensedBold;
+                font-size: 19px;
+                color: #414948;
+                -webkit-transform: 300ms;
+                -moz-transform: 300ms;
+                -ms-transform: 300ms;
+                -o-transform: 300ms;
+                transform: 300ms;
+              }
+              p{
+                font-family: RobotoLight;
+                font-size: 16px;
+                color: #353B3B;
+              }
+
+            }
+          }
+        }
+        .Souvenirs{
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          h1{
+            margin: 60px 0 12px 0px;
+            font-family: RobotoCondensed;
+          }
+          .new{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .surprice{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .over{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            a{
+              font-family: RobotoRegular;
+              font-size: 18px;
+              text-decoration: none;
+              color: #414948;
+              position: relative;
+              margin-right: 71px;
+              &:hover{
+                color: #E74C3C;
+              }
+              span{
+                background-image: url("../../../img/right-arrow.svg");
+                width: 7px;
+                height: 13px;
+                color: #414948;
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                top: 7px;
+                right: -22px;
+              }
+            }
+          }
+        }
+        .Slider{
+          margin: 100px 0;
+        }
+      }
+    }
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 974px) {
+  .FirstPage{
+    .section{
+      .row{
+        .Info{
+          .quality{
+            .what{
+              h2{
+                margin-right: 15px;
+              }
+              .color{
+                margin-right: -15px;
+              }
+            }
+          }
+          .turistService{
+            padding: 0;
+          }
+          .Souvenirs{
+            .new{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 775px) {
+  .FirstPage{
+    .section{
+      .row{
+        .Info{
+          .turistService{
+            padding: 0;
+            .Service{
+              p{
+                width: 100%;
+              }
+            }
+          }
+          .Souvenirs{
+            .new{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            }
+            .surprice{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 374px) and (max-width: 573px) {
+  .FirstPage{
+    .section{
+      .row{
+        .Info{
+          .turistService{
+            padding: 0;
+          }
+          .Souvenirs{
+            .new{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            }
+            .surprice{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 373px) {
+  .FirstPage{
+    .section{
+      .row{
+        .Info{
+          .quality{
+            .what{
+              h2{
+                margin-right: 5px;
+              }
+              .color{
+                margin-right: -5px;
+              }
+            }
+          }
+          .turistService{
+            padding: 0;
+          }
+          .Souvenirs{
+            .new{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

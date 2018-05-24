@@ -1,0 +1,29 @@
+.Cards{
+  margin: 20px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 444px;
+  min-height: 185px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    .row{
+
+      padding: 0 30px;
+      h6{
+        font-family: OpenSansSemiBold;
+        font-family: 15px;
+        color: rgba(65, 73, 72, 1);
+        display: block;
+        margin: 10px 0 20px 0;
+        font-weight: 600;
+      }
+    }
+}
+
+@media (max-width: 767px) {
+  .Cards{
+    .row{
+      width: 260px;
+    }
+  }
+}

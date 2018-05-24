@@ -1,0 +1,22 @@
+.digits{
+  box-shadow: 0 3px 6px #cec6c6;
+  height: 100%;
+  h1{
+    font-family: Roboto_Black;
+    font-size: 50px;
+    color: #414948;
+    font-weight: bold;
+  }
+  p{
+    font-family: RobotoMedium;
+    font-size: 14px;
+    color: #414948;
+  }
+  img{
+    width: 126px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 38%;
+  }
+}

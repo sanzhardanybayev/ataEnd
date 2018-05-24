@@ -1,0 +1,197 @@
+.active {
+  color: #E74C3C !important;
+}
+.Navigation{
+  .communications{
+    p{
+      font-family: RobotoRegular;
+      font-size: 14px;
+      color: #FFFFFF;
+      cursor: pointer;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .address{
+      font-family: RobotoRegular;
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-image: url("../../../img/icons/maps-and-flags (1).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        right: 18px;
+        top: 0px;
+      }
+    }
+    .devLink{
+      font-family: RobotoRegular;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-decoration: none;
+      float: left;
+      }
+    .maill{
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url("../../../img/icons/sent-mail.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        right: 15px;
+        top: 1px;
+      }
+    }
+    .call{
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url("../../../img/icons/mobile-phone.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        right: 15px;
+        top: 1px;
+      }
+    }
+    }
+  .NavLink{
+
+    .avia{
+      .linktoPage{
+        font-family: GilroyLight;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover{
+          transition: 500ms;
+          text-decoration: none;
+          color: #E74C3C !important;
+        }
+        &:focus{
+          text-decoration: none;
+        }
+      }
+      .aviata{
+        position: relative;
+        .linktoPage{
+          font-family: GilroyLight;
+          font-size: 15px;
+          color: #FFFFFF;
+          position: relative;
+          cursor: pointer;
+          .show1{
+            transform: rotate3d(11, 0, 0, 180deg);
+          }
+          span{
+            transform: rotate3d(0, 0, 0, 0deg);
+            transition: 800ms;
+            background-image: url("../../../img/down-arrow1.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 7px;
+            position: absolute;
+            top: 7px;
+            right: -15px;
+
+
+          }
+        }
+        .show{
+          height: 65px !important;
+        }
+        .windows{
+          transition: 800ms;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          height: 0;
+          overflow: hidden;
+          align-items: center;
+          justify-content: center;
+          width: 113px;
+          div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            a{
+              color: white;
+              font-size: 13px;
+              font-family: GilroyLight;
+              text-decoration: none;
+              margin: 5px 0;
+              transition: 500ms;
+              &:hover{
+                color: #E74C3C !important;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+  .leftCetnerLine{
+    cursor: pointer;
+    width: 45%;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: auto;
+    opacity: 0.1;
+  }
+  .logo{
+    z-index: 5;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 28px;
+
+    //background-image: url("../../../img/icons/Group 576.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    a{
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .rightCetnerLine{
+    width: 45%;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: auto;
+    opacity: 0.1;
+  }
+  }
+
+

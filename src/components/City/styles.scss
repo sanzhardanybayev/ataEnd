@@ -1,0 +1,123 @@
+
+.show1{
+  box-shadow: 0 6px 10px #e5e5e5;
+}
+.city{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border-right: 1px solid #dee0e0;
+  vertical-align: top;
+  padding-top: 4px;
+  padding-left: 18px;
+  .inputCity{
+    color: black;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    cursor: pointer;
+    font-family: GilroyLight;
+    border: none;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+    padding-left: 39px;
+    -webkit-appearance: none;
+  }
+
+  .chek{
+    transition: 700ms;
+    cursor: pointer;
+    height: 40px;
+    vertical-align: middle;
+    padding-top: 10%;
+    line-height: 1vh;
+  }
+}
+.city:hover{
+
+  //.Fall{
+  //  max-height: 300px !important;
+  //  overflow-y: auto !important;
+  //  border-bottom-left-radius: 30px;
+  //  border-bottom-right-radius: 30px;
+  //}
+}
+.city:before{
+  content: url("../../images/route.png");
+  position: absolute;
+  left: 20px;
+  top: 7px;
+  z-index: 101;
+}
+.show2{
+  max-height: 300px !important;
+  overflow-y: auto !important;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.Fall {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  display: block;
+  background: #fff;
+  max-height: 0px ;
+  top: 87%;
+  left: 0%;
+  width: 100%;
+  box-shadow: 0 6px 10px rgba(0,0,0, 0.1);
+  transition: 500ms;
+  z-index: 100;
+  overflow-y: scroll !important;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      font-size: 12px;
+    }
+  }
+}
+div{
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  }
+
+.chek:hover{
+  background-color: #eee;
+}
+
+
+@media (max-width: 1200px) {
+  .show1{
+    transition: 300ms;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .city{
+    border-radius: 30px;
+    height: 50px;
+    box-shadow: 0 0 5px #eee;
+    &:hover{
+
+    }
+    .inputCity{
+      border-radius: 30px;
+    }
+  }
+}
+@media (max-width: 767px){
+  .city{
+    width: 280px;
+  }
+}

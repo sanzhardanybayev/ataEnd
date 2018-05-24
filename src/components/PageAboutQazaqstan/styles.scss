@@ -1,0 +1,135 @@
+.Block1{
+  display: block;
+  position: relative;
+  padding-left: 4vw;
+  h3{
+    font-family: RobotoCondensedBold;
+    font-size: 29px;
+    color: #414948;
+    margin-bottom: 0;
+    position: relative;
+    left: -35px;
+  }
+  h3:before{
+    content: url("../../images/route.png");
+    margin-right: 10px;
+  }
+  p{
+    font-family: GilroyLight;
+    font-size: 15px;
+    color: #414948;
+    margin: 1px 0 0 0;
+  }
+  h4{
+    font-family: RobotoCondensed_Light;
+    font-size: 16px;
+    font-weight: 600;
+    color: #414948;
+    margin-bottom: 10px;
+  }
+  .city{
+    &:before{
+      content: url("../../../img/icons/cityscape.png");
+      margin-left: -8px;
+      position: relative;
+      left: -11px;
+    }
+  }
+  .languages{
+    &:before{
+      content: url("../../../img/icons/translate.png");
+      margin-left: -8px;
+      position: relative;
+      left: -11px;
+    }
+  }
+  .currency{
+    &:before{
+      content: url("../../../img/icons/Group 508.png");
+      margin-left: 3px;
+      position: relative;
+      left: -11px;
+    }
+  }
+  .UTF{
+      max-width: 115px;
+    &:before{
+      content: url("../../../img/icons/stopwatch.png");
+      margin-left: -5px;
+      position: relative;
+      left: -11px;
+    }
+}
+}
+.Block2{
+  p{
+    font-family: OpenSansLight;
+    font-size: 15px;
+    color: #414948;
+    margin-bottom: 2px;
+  }
+}
+
+.data{
+  font-family: OpenSansLight;
+  font-size: 16px;
+  h2{
+    font-family: RobotoCondensedBold;
+    font-size: 34px;
+    color: #414948;
+  }
+}
+.containerFact{
+  .Fact{
+    h1{
+      font-size: 110px;
+      color: #E74C3C;
+      opacity: 0.5;
+    }
+  }
+}
+@media (min-width: 955px) and (max-width: 1200px){
+  .image{
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 954px){
+  .image{
+    width: 329px;
+  }
+}
+@media (max-width: 767px){
+  .image{
+    width: 407px;
+    margin-bottom: 30px;
+    margin-left: 106px;
+  }
+}
+@media (max-width: 576px){
+  .Block1{
+    p{
+      margin-bottom: 5px !important;
+    }
+  }
+  .image{
+    width: 350px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .Block1{
+    h3 {
+      padding-left: 7% !important;
+      &:before {
+        display: none !important;
+      }
+    }
+  }
+  .image{
+    width: 70vw;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+}

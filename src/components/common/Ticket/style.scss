@@ -1,0 +1,82 @@
+.Ticket{
+  margin: 20px 0;
+  width: 352px;
+  box-shadow: 0 0 10px #b9b9b9;
+  border-radius: 8px;
+  position: relative;
+  .container{
+    height: 33px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .counter{
+      position: absolute;
+      width: 70%;
+      height: 33px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      bottom: 0;
+      left: 40px;
+      .plus{
+        width: 33px;
+        height: 33px;
+        background: #e74c3c;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 12px;
+          height: 12px;
+        }
+      }
+      p{
+        margin: 0;
+      }
+      .minus{
+        width: 33px;
+        height: 33px;
+        background: #e74c3c;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  h6{
+    font-family: OpenSansSemiBold;
+    font-size: 15px;
+    color: #E74C3C;
+  }
+  p{
+    font-family: OpenSansRegular;
+    font-size: 15px;
+    color: #000000;
+    opacity: 0.65;
+  }
+  h4{
+    font-family: RobotoRegular;
+    font-size: 20px;
+    color: #414948;
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+  img{
+    width: 22px;
+    height: 23px;
+    display: inline-block;
+  }
+}
+@media (max-width: 767px){
+  .Ticket{
+    width: 100%;
+  }
+}

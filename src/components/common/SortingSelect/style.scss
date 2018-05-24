@@ -1,0 +1,136 @@
+.Select{
+  width: 290px;
+  height: 40px;
+  display: flex;
+  margin: 21px 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  .sorting{
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before{
+      content: ' ';
+      border-left: 1px solid silver;
+      opacity: 0.3;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    p{
+      font-family: GilroyLight;
+      font-size: 15px;
+      color: black;
+      margin: 0;
+      span{
+        color: #E74C3C;
+      }
+    }
+  }
+  .Day{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: white;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .inputCity{
+      margin-right: 8px;
+      border: none;
+      width: 50px;
+      font-size: 15px;
+      color: #E74C3C;
+      font-family: GilroyLight;
+    }
+    .arrowInput{
+      margin-top: 5px;
+      width: 14.51px;
+      height: 14.51px;
+      cursor: pointer;
+      border: none;
+      background-image: url("../../../../img/down-arrow.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      &:focus{
+        border: none !important;
+        outline: none !important;
+      }
+    }
+    p{
+      font-size: 15px;
+      margin: 0 5px 3px 5px;
+      font-family: OpenSansRegular;
+    }
+    img{
+      height: 14px;
+      width: 14px;
+    }
+    .arrow{
+      height: 15px;
+      width: 9px;
+    }
+    .show1{
+      opacity: 1 !important;
+      transition: 500ms;
+
+
+    }
+    .Fall{
+      position: absolute;
+      transition: 500ms;
+      top: 27px;
+      left: -2px;
+      width: 147px;
+      .show2{
+        height: 120px !important;
+        transition: 500ms;
+        padding: 0 20px;
+      }
+      ul{
+
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        transition: 500ms;
+        height: 0;
+        width: 147px;
+        display: flex;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        flex-direction: column;
+        overflow: hidden;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        padding: 0 20px;
+        margin: 0;
+        background: white;
+        .bottom{
+        }
+        li{
+          list-style: none;
+          cursor: pointer;
+          color: black;
+          a{
+            font-size: 15px;
+            font-family: GilroyLight;
+          }
+
+
+        }
+      }
+    }
+  }
+
+}

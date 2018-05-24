@@ -1,0 +1,28 @@
+.carousel{
+  width: 100%;
+  height: 100%;
+  a{
+    z-index: 2;
+  }
+  .carousel1{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+
+    div{
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+    #image1{
+      background-image: url("https://i.ytimg.com/vi/wTxLjo1T9ks/maxresdefault.jpg");
+    }
+    #image2{
+      background-image: url("http://www.fresher.ru/manager_content/07-2016/dlya-bogatyx-i-znamenityx-kak-vyglyadit-pyatizvyozdochnyj-otdyx-na-kurorte-one-and-only-hayman-island-na-bolshom-barernom-rife/1.jpg");
+    }
+    #image3{
+      background-image: url("https://i.ytimg.com/vi/FNQ2T2Gab8o/maxresdefault.jpg");
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.ourText{
+  margin: 20px 0;
+  .text{
+    display: flex;
+    align-items: center;
+    h4{
+      color: #414948;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: RobotoCondensed;
+    }
+    img{
+      width: 15px;
+      height: 15px;
+    }
+    p{
+      color: #414948;
+      font-size: 15px;
+      margin: 0 0 0 15px;
+    }
+  }
+  .allRooms{
+    display: flex;
+    margin: 10px 0;
+    .Left{
+      h6{
+        font-size: 15px;
+        color: #414948;
+      }
+
+    }
+    .Right{
+      h6{
+        font-size: 15px;
+        color: #414948;
+      }
+
+    }
+  }
+}

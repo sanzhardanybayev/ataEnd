@@ -1,0 +1,70 @@
+.dopContent{
+  padding-bottom: 10px;
+  margin: 0 10px;
+  width: 500px;
+  height: 370px;
+  display: flex;
+  align-items: flex-end;
+  .content{
+    padding: 0 30px;
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    width: 500px;
+    height: 280px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    .Images{
+      width: 100%;
+      position: absolute;
+      top: -77px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .backgroundImages{
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        -webkit-transition: 1s ;
+        -moz-transition: 1s ;
+        -ms-transition: 1s ;
+        -o-transition: 1s ;
+        transition: 1s ;
+        &:hover{
+          background-size: 110%;
+        }
+      }
+      h3{
+        font-family: OpenSansSemiBold;
+        color: rgba(65, 73, 72, 1);
+        font-size: 19px;
+        margin: 20px 0;
+      }
+    }
+    .text{
+      height: 70%;
+      width: 100%;
+      p{
+        font-family: OpenSansRegular;
+        color: rgba(80, 103, 103, 1);
+        font-size: 15px;
+        margin-top: 30px;
+      }
+    }
+    .dates{
+      position: absolute;
+      bottom: 0;
+      p{
+        font-family: OpenSansRegular;
+        font-size: 12px;
+        color: rgba(133, 133, 133, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+
+  .Modal{
+    border-radius: 4px;
+    padding: 0 10px 0 10px;
+    background: white;
+    width: 100%;
+    position: relative;
+    .textClose{
+      margin-top: -7px;
+      position: relative;
+      width: 100%;
+      h6{
+        font-family: RobotoCondensed;
+        font-size: 20px;
+        color: #414948;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+      span{
+        position: absolute;
+        background-image: url("../../../../img/close.svg");
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-size: cover;
+        top: -8px;
+        right: -19px;
+        color: #414948;
+      }
+    }
+    .image{
+      height: 525px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .geolocation{
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      .placeholder{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        img{
+          width: 17px;
+          height: 19px;
+        }
+        p{
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          color: #414948;
+          margin: 0 0 0 8px;
+        }
+      }
+      .calendars{
+        margin: 20px 20px 20px 20px;
+        display: flex;
+        align-items: center;
+        img{
+          width: 17px;
+          height: 18px;
+        }
+        p{
+          color: #414948;
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          margin: 0 0 0 8px;
+        }
+      }
+      .profile{
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        img{
+          width: 18px;
+          height: 18px;
+        }
+        p{
+          color: #414948;
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          margin: 0 0 0 8px;
+        }
+      }
+    }
+    .description{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 10px 0 30px 0;
+      h6{
+        color: #414948;
+        font-family: RobotoLight;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+
+      }
+      span{
+        color: #414948;
+        font-family: RobotoLight;
+        font-size: 16px;
+        margin: 0 0 0 16px;
+      }
+    }
+    .slider{
+      width: 100%;
+    }
+    .comments{
+      padding-left: 8px;
+    }
+  }
+
+
+@media (max-width: 767px) {
+    .Modal{
+      padding: 0 !important;
+      .image{
+        height: 200px;
+      }
+      .geolocation{
+        flex-direction: column;
+        .placeholder{
+          margin: 7px 0;
+        }
+        .calendars{
+          margin: 7px 0;
+        }
+        .profile{
+          margin: 7px 0;
+        }
+      }
+      .description{
+        display: flex;
+        flex-direction: column;
+        h6{
+          width: 100%;
+        }
+      }
+    }
+}

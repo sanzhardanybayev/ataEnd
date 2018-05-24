@@ -1,0 +1,207 @@
+.closeButton{
+  width: 23px;
+  position: absolute;
+  top: 0px;
+  right: -22px;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover{
+    transition: 300ms;
+    transform: scale(1.2);
+  }
+}
+div{
+  div{
+    position: relative;
+    .line{
+      width: 100%;
+      position: absolute;
+      bottom: -48px;
+      left: 0;
+      border: 1px solid silver;
+
+      opacity: 0.2;
+    }
+  }
+  .Gallery{
+    .row{
+      .Info{
+        .choice{
+          margin: 20px 0;
+          #after{
+            margin-left: 20px;
+          }
+          a{
+            position: relative;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: GilroyLight;
+            font-size: 15px;
+            color: #414948;
+            &:hover .before{
+              width: 50%;
+              opacity: 1;
+            }
+            &:hover .after{
+              width: 50%;
+              opacity: 1;
+            }
+            .before{
+              opacity: 0;
+              content: '';
+              position: absolute;
+              border: 1px solid #E74C3C;
+              width: 10%;
+              bottom: -5px;
+              right: 50%;
+              transition: .6s;
+            }
+            .after{
+              opacity: 0;
+              content: '';
+              position: absolute;
+              border: 1px solid #E74C3C;
+              bottom: -5px;
+              left: 50%;
+              width: 10%;
+              transition: .6s;
+            }
+          }
+        }
+        #video{
+          margin-top: 50px;
+        }
+        .Fotography{
+          margin: 40px 0 5px 0;
+          h3{
+            font-size: 29px;
+            color: #414948;
+            font-family: RobotoCondensedBold;
+          }
+        }
+        .hide1{
+          max-height: auto !important;
+        }
+        .allImage{
+          padding-left: 35px;
+          padding-right: 35px;
+          transition: 500ms;
+          margin: 0;
+          display: flex;
+          max-height: 1125px;
+          overflow: hidden;
+
+        }
+        .butt{
+          height: 40px;
+          text-align: center;
+          display: flex;
+          margin: 30px 0;
+          align-items: center;
+          justify-content: center;
+          .showMore1{
+            display: none !important;
+          }
+          .showMore{
+            display: block;
+          }
+          a{
+            -webkit-border-radius: 24px;
+            -moz-border-radius: 24px;
+            border-radius: 24px;
+            background: #E74C3C;
+            width: 231px;
+            color: white;
+            font-family: GilroyLight;
+            font-size: 15px;
+            text-decoration: none;
+            cursor: pointer;
+            height: 33px;
+            text-align: center;
+            line-height: 2;
+            &:focus{
+              border: none;
+              outline: none;
+              text-decoration: none;
+            }
+          }
+        }
+        .hide2{
+          max-height: auto !important;
+        }
+        .video{
+          padding-left: 35px;
+          padding-right: 35px;
+          margin: 0;
+          transition: 500ms;
+          cursor: pointer;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          position: relative;
+          display: flex;
+          max-height: 1125px;
+          overflow: hidden;
+
+
+        }
+        //.video:nth-child(1){
+        //  margin: 0 10px !important;
+        //  -webkit-border-radius: 4px;
+        //  -moz-border-radius: 4px;
+        //  border-radius: 4px;
+        //  div{
+        //    margin: 0 10px !important;
+        //    -webkit-border-radius: 4px;
+        //    -moz-border-radius: 4px;
+        //    border-radius: 4px;
+        //  }
+        //}
+      }
+    }
+  }
+}
+@media (max-width: 767px){
+  div{
+    .Gallery{
+      .row{
+        .allImage{
+          height: 1151px !important;
+        }
+        .video{
+          height: 1151px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 573px){
+  div{
+    .Gallery{
+      .row{
+        .allImage{
+          height: 1040px !important;
+        }
+        .video{
+          height: 1040px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 373px){
+  div{
+    .Gallery{
+      .row{
+        .Info{
+          .allImage{
+            height: 120vh !important;
+          }
+          .video{
+            height: 1040px !important;
+          }
+        }
+      }
+    }
+  }
+}

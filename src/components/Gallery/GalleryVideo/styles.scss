@@ -1,0 +1,104 @@
+.videoText{
+  width: 505px;
+  height: 330px;
+  margin: 20px auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  &:hover .text h3{
+    transition: 300ms;
+  }
+  &:hover .text .placeholder{
+    transform: translateY(0px);
+    transition: 300ms;
+  }
+  &:hover .text .calendar{
+    transform: translateY(0px);
+    transition: 300ms;
+  }
+  .text{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h3 {
+      color: white ;
+      font-size: 20px;
+      font-family: RobotoCondensed;
+      transform: translateY(0px);
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+    }
+    .placeholder{
+      align-items: center;
+      display: flex;
+      transform: translateY(-90px);
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+      img{
+        width: 15px;
+        height: 17px;
+      }
+      p{
+        margin: 0 0 0 8px;
+        font-family: OpenSansSemiBold;
+        font-size: 15px;
+        color: white;
+      }
+    }
+    .calendar{
+      margin-top: 8px;
+      align-items: center;
+      margin-bottom: 11px;
+      display: flex;
+      transform: translateY(-93px);
+      -webkit-transition: 300ms;
+      -moz-transition: 300ms;
+      -ms-transition: 300ms;
+      -o-transition: 300ms;
+      transition: 300ms;
+      img{
+        width: 15px;
+        height: 16px;
+      }
+      p{
+        color: white;
+        font-family: OpenSansSemiBold;
+        font-size: 15px;
+        margin: 0 0 0 8px;
+      }
+    }
+  }
+  div{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .videoText{
+    height: 250px;
+  }
+}
+@media (min-width: 374px) and (max-width: 577px){
+  .videoText{
+    height: 220px;
+  }
+}
+@media (max-width: 373px) {
+  .videoText{
+    height: 20%;
+  }
+}

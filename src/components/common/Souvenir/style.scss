@@ -1,0 +1,149 @@
+.Cards{
+  margin: 19px 5px 50px 5px;
+  width: 240px;
+  min-height: 379px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  .ImageFilter{
+    width: 100%;
+    height: 155px;
+    position: relative;
+    .Images{
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-direction: column;
+      justify-content: flex-end;
+      display: flex;
+      p{
+        z-index: 1;
+        font-family: RobotoCondensed;
+        font-size: 17px;
+        color: white;
+        margin: 0 0 0 25px;
+      }
+      .Stars{
+        width: 100%;
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .Filter{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: black;
+      opacity: 0.3;
+      top: 0;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      left: 0;
+    }
+  }
+  .Learn{
+
+    padding-left: 20px;
+    padding-right: 20px;
+    .Watch{
+      height: 50px;
+      margin: 10px 0;
+      display: flex;
+      position: relative;
+      &:before{
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: rgba(149, 152, 154, 0.1);
+      }
+      .Tenge{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        p{
+          color: #414948;
+          margin: 0 5px 3px 5px;
+          font-family: OpenSansRegular;
+          span{
+            font-family: OpenSansRegular;
+            color: #000;
+          }
+        }
+        img{
+          width: 12px;
+          height: 14px;
+        }
+      }
+    }
+
+
+  }
+  .text{
+    margin: 10px 0;
+    min-height: 89px;
+    p{
+      font-family: OpenSansRegular;
+      font-size: 14px;
+    }
+  }
+
+  .learnMore{
+    margin: 10px 0;
+    width: 100%;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    &:hover img{
+      transform: translateX(10px);
+    }
+    &:hover a {
+      color: #E74C3C !important;
+    }
+    a{
+      cursor: pointer;
+      font-family: OpenSansRegular;
+      font-size: 12px;
+      text-decoration: none;
+      color: black;
+      transition: 500ms;
+      &:hover{
+        color: #E74C3C !important;
+      }
+    }
+    img{
+      transition: 300ms;
+      width: 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+  }
+}
+
+@media (min-width: 374px) and (max-width: 573px){
+  .Cards{
+    margin: 10px 0;
+    width: 260px;
+  }
+}
+@media (min-width: 0px) and (max-width: 373px){
+  .Cards{
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,23 @@
+.Choose{
+  font-family: GilroyLight !important;
+  font-size: 15px !important;
+  background: #E74C3C !important;
+  color: white !important;
+  padding: 5px 40px !important;
+  -webkit-border-radius: 21px !important;
+  -moz-border-radius: 21px !important;
+  border-radius: 21px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  &:hover{
+    border: none !important;
+    outline: none !important;
+    color: white;
+    text-decoration: none;
+  }
+  &:focus{
+    border: none !important;
+    outline: none !important;
+    text-decoration: none;
+  }
+}

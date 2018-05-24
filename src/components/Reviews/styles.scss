@@ -1,0 +1,54 @@
+
+.Reviews{
+  margin-top: 80px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 3px 6px #c1bbbb;
+  position: relative;
+  padding-top: 60px;
+  border-radius: 8px;
+  z-index: 0;
+  min-height: 288px;
+  padding-bottom: 30px;
+  .Avatar{
+    width: 135px;
+    height: 134px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    z-index: 11111;
+    background-image: url("../../../img/123.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 36%;
+    background-position: center center;
+  }
+  h2{
+  font-family: OpenSansSemiBold;
+    color: #414948;
+    font-size: 19px;
+  }
+  p{
+    font-family: OpenSansRegular;
+    margin: 0 10% 0 10%;
+    text-align: left;
+    color: #506767;
+    font-size: 15px;
+  }
+  .date{
+    font-family: OpenSansRegular;
+    color: #858585;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5%;
+    left: 34%;
+  }
+}
+@media (max-width: 944px) {
+  .Reviews{
+    width: 100%;
+    max-width: 100%;
+  }
+
+}

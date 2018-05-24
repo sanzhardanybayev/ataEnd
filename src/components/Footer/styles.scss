@@ -1,0 +1,169 @@
+
+.footer{
+  margin-top: 50px;
+  background-color: #2A2C2B;
+  color: #FFFFFF;
+  border-bottom: 20px solid #1E1E20;
+  .rowPadding{
+    padding-bottom: 48px;
+    .cotact{
+      div{
+        margin-top: 40px;
+      }
+      p{
+        font-family: RobotoRegular;
+        font-size: 14px;
+        margin-bottom: 1em;
+        a{
+          color: white;
+          cursor: pointer;
+          text-decoration: none;
+
+        }
+      }
+      .call{
+        font-family: RobotoRegular;
+        font-size: 14px;
+        margin-bottom: 2em;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      p:nth-child(1):before{
+        content: url("../../images/maps-and-flags.png");
+        position: absolute;
+        left: -10px;
+      }
+      p:nth-child(2):before{
+        content: url("../../images/phone.png");
+        position: absolute;
+        left: -10px;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      p:nth-child(3):before{
+        content: url("../../images/send.png");
+        position: absolute;
+        left: -10px;
+      }
+    }
+    .info1{
+      margin-top: 40px;
+      div{
+        display: inline-block;
+        width: 50%;
+      }
+      h5{
+        display: block;
+        font-family: RobotoMedium;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+      a{
+        display: block;
+        font-family: RobotoMedium;
+        color: #FFFFFF;
+        font-size: 14px;
+        margin-top: 1em;
+        transition: 500ms;
+        &:hover{
+          text-decoration: none;
+          outline: none;
+          color: #E74C3C !important;
+        }
+      }
+    }
+    .payment{
+      margin-top: 40px;
+      h5{
+        font-family: RobotoRegular;
+        font-size: 14px;
+        margin-bottom: 1em;
+      }
+      img{
+        margin-right: 10px;
+        width: 44px;
+        height: 28px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .socialLink{
+      a:nth-child(1){
+        display: inline-block;
+        width: 21px;
+        height: 22px;
+        vertical-align: top;
+        margin-left: 25px;
+        margin-top: 35px;
+        background-image: url("../../images/insta_footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      a:nth-child(2){
+        display: inline-block;
+        width: 27px;
+        height: 20px;
+        vertical-align: top;
+        margin-top: 35px;
+        margin-left: 25px;
+        background-image: url("../../images/vk_footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      a:nth-child(3){
+        display: inline-block;
+        width: 10px;
+        height: 22px;
+        vertical-align: top;
+        margin-top: 35px;
+        margin-left: 25px;
+        background-image: url("../../images/facebook_footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      a:nth-child(4){
+        display: inline-block;
+        width: 30px;
+        height: 17px;
+        vertical-align: top;
+        margin-top: 38px;
+        margin-left: 25px;
+        background-image: url("../../images/youtube_footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .cotact{
+    padding-left: 43px !important;
+  }
+  .socialLink{
+    a:nth-child(1){
+      margin-left: 10px !important;
+    }
+  }
+  .socialLink{
+    text-align: start !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cotact{
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .socialLink{
+    text-align: end;
+  }
+}

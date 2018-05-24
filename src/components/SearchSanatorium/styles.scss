@@ -1,0 +1,75 @@
+.allServices{
+  width: 100%;
+}
+.show{
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.Search {
+  margin-top: 30px;
+  display: flex;
+  height: 40px;
+  width: 80%;
+  font-family: GilroyLight;
+  position: relative;
+  min-width: 1080px;
+  box-shadow: 0 3px 6px #e5e5e5;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  z-index: 0;
+  position: relative;
+  &:hover{
+
+  }
+  button {
+    width: 16%;
+    height: 100%;
+    background-color: #E74C3C;
+    border: none;
+    color: #FFFFFF;
+    outline: none !important;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-family: GilroyLight;
+    position: absolute;
+    right: 0px;
+    transition: 300ms;
+  }
+  button:hover {
+    box-shadow: 0 3px 6px rgba(231, 76, 60, 0.7);
+  }
+}
+  .Dialog{
+    padding-top: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+  }
+@media (max-width: 767px) {
+  .Dialog{
+    .bookIt{
+      .imageFilter{
+        height: 120px;
+      }
+      .content{
+        .ModalInput{
+          flex-direction: column;
+          .ModalInput1{
+            width: 100%;
+          }
+          .ModalInput2{
+            width: 100%;
+            input{
+              width: 100% !important;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
