@@ -44,7 +44,8 @@ class App extends React.Component {
     if (type === 'souveniers') {
       url = `http://${window.host}/${type}`
     } else {
-      url = `http://${window.host}/${type}?page=${page}&limit=13&price=${price}&rating=${rating}${boonQuery}`
+      // url = `http://${window.host}/${type}?page=${page}&limit=6&price=${price}&rating=${rating}${boonQuery}`
+      url = `http://${window.host}/${type}?page=${page}&limit=6&rating=${rating}${boonQuery}`
     }
 
     axios.get(url)

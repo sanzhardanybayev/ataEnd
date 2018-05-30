@@ -7,7 +7,7 @@ const FilterContainer = (props) => {
     return (
         <div className={styles.Cont}>
             <FilterPanel type={props.type} min={1000} max={1000000} />
-            <Facilities type={props.type} />
+            {/*<Facilities type={props.type} />*/}
         </div>
     );
 };
