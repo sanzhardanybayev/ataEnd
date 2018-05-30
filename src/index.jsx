@@ -18,7 +18,7 @@ const store = createStore(
 
 
 
-window.host = '5.101.114.142:3000';
+window.host = 'topclass.kz:3000';
 
 ReactDOM.render(
     <Provider store={store}>

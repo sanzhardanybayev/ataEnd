@@ -1,5 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
+import swal from 'sweetalert'
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import 'bootstrap/dist/css/bootstrap-reboot.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
@@ -30,12 +30,12 @@ class Rooms extends React.Component {
             type,
             name: 'artur',
             phoneNumber: '+77473811111',
-            email: 'artur@mail.ru',
+            email: 'ygl8@storiqax.top',
             date: new Date(this.state.date)
         };
 
         axios.post(`http://${window.host}/requests`, data).then(() => {
-            alert('Thanks!')
+          swal("Отлично", "Ваша заявка отправлена", "success");
         })
 
 

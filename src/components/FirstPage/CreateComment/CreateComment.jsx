@@ -31,6 +31,11 @@ import styles from './style.scss';
 
 class CreateComment extends React.Component{
 
+    constructor(props){
+        super(props)
+
+        this.send = this.send.bind(this)
+    }
     // state = { value: '', fileName: '', toasts: [] };
 
     // handleChange = ({ name }, e) => {
@@ -60,7 +65,7 @@ class CreateComment extends React.Component{
         }).then((res) => {
             console.log(res.data);
             alert('Submited');
-        });
+        })
     }
     render(){
         return[
@@ -94,7 +99,7 @@ class CreateComment extends React.Component{
                                     <input name="email" placeholder='E-mail*' type="text" />
                                     <textarea name="text" placeholder='Текст сообщения' />
                                     <div className={styles.but}>
-                                        <button type="submit"> Оставить отзыв </button>
+                                        <button onClick={this.send} type="submit"> Оставить отзыв </button>
                                     </div>
                                 </form>
                             </div>
