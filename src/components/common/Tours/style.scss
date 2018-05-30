@@ -99,8 +99,13 @@
     p{
       font-family: OpenSansRegular;
       font-size: 14px;
+      overflow: hidden;
+      /* white-space: pre; */
+      text-overflow: ellipsis;
+      height: 110px;
     }
   }
+
 
   .learnMore{
     margin: 18px 0;

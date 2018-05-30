@@ -8,7 +8,10 @@ class Reviews extends React.Component {
         const url = `http://${window.host}/images/Main%20Page/${this.props.img}`;
         return (
             <div className={[styles.Reviews, 'col-6 mb-4'].join(' ')}>
-                <div className={styles.Avatar} style={{ backgroundImage: `url(${url}) ` }} ></div>
+
+                <div className={styles.avatars}>
+                    <div className={styles.Avatar} style={{ backgroundImage: `url(${url}) ` }} ></div>
+                </div>
 
                 <h2 className={styles.name}>{this.props.name}</h2>
                 <p>{this.props.text}</p>

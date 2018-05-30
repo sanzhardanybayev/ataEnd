@@ -51,7 +51,7 @@ class Product extends React.Component {
             <div className={styles.basketInfo} >
                 <div className={styles.Left} >
                     <p> {this.props.type} </p>
-                    <p> {this.props.content} </p>
+                    {/*<p> {this.props.content} </p>*/}
 
                 </div>
                 <div className={styles.Center} >

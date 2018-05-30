@@ -10,20 +10,26 @@
   z-index: 0;
   min-height: 288px;
   padding-bottom: 30px;
-  .Avatar{
-    width: 135px;
+  .avatars{
+    width: 100%;
     height: 134px;
-    display: block;
-    border-radius: 50%;
     position: absolute;
     top: -80px;
-    z-index: 11111;
-    background-image: url("../../../img/123.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: 36%;
-    background-position: center center;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Avatar{
+      width: 135px;
+      height: 134px;
+      display: block;
+      border-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
+
   h2{
   font-family: OpenSansSemiBold;
     color: #414948;

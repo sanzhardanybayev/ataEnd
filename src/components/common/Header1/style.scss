@@ -50,6 +50,9 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    &.show{
+      background-image: url("../../../../img/sanatori.jpg");
+    }
     .Filter{
       position: absolute;
       top: 0;

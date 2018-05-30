@@ -20,11 +20,18 @@ class Header1 extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      activeService: 1
+      activeService: 1,
+        active: false
     }
-    this.switchActiveService = this.switchActiveService.bind(this)
+    this.switchActiveService = this.switchActiveService.bind(this);
+    this.background = this.background.bind(this);
   }
 
+    background() {
+        this.setState({
+            active: !this.state.active
+        })
+    }
   /*
     Переключает выбранную услугу при клике
     0 - Туры
@@ -41,6 +48,7 @@ class Header1 extends React.Component {
         })
       }
     }
+    this.background();
 
   }
 
@@ -48,7 +56,7 @@ class Header1 extends React.Component {
   render() {
     return (
       <section className={styles.sectionHeader} >
-        <div className={[styles.Header, 'pb-4'].join(' ')} >
+        <div className={[(this.state.active) ? styles.show : '', styles.Header, 'pb-4'].join(' ')} >
           <div className={styles.Filter} />
           <Navigation />
           <NavigationSmallScreen />
@@ -78,7 +86,8 @@ class Header1 extends React.Component {
                 src={require('../../../../img/icons/luggageWhite.svg')}
                 alt=""
               />
-              <img type="tours" className={styles.red} src={require('../../../../img/icons/luggage.svg')} alt="" />
+              <img
+                  type="tours" className={styles.red} src={require('../../../../img/icons/luggage.svg')} alt="" />
               <a >ТУРЫ
                 <span type="tours" className={styles.after} />
                 <span type="tours" className={styles.before} />
